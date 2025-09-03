@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex | Developer Portfolio</title>
+  <style>
+    /* 🌐 Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* 🔺 Header */
+    header {
+      background: #c1121f;
+      color: #fff;
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd6d6;
+    }
+
+    /* 📍 Main */
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: #c1121f;
+      margin-bottom: 15px;
+      border-left: 5px solid #c1121f;
+      padding-left: 10px;
+    }
+
+    /* 🗂 Portfolio */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: #ffe5e5;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h3 {
+      margin-bottom: 8px;
+      color: #a10d15;
+    }
+
+    /* ✍️ Blog */
+    article {
+      margin-bottom: 25px;
+      padding: 20px;
+      border-left: 4px solid #c1121f;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    article h3 {
+      margin-bottom: 10px;
+      color: #a10d15;
+    }
+
+    /* 📩 Footer */
+    footer {
+      background: #c1121f;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ffe5e5;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- 🔺 Header -->
+  <header>
+    <h1>Alex | Developer Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#blog">Insights</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🏠 Main -->
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello, I’m Alex. I’m a web developer who loves clean design and smooth functionality.  
+        My journey started with curiosity about how websites work and grew into a passion for 
+        creating digital tools that are simple, intuitive, and meaningful.  
+        Outside of coding, I enjoy exploring new tech trends and mentoring beginner developers.</p>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <h2>My Work</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Startup Landing Page</h3>
+          <p>A sleek, responsive landing page designed for a SaaS startup to showcase features and attract signups.</p>
+        </div>
+        <div class="project">
+          <h3>E-Commerce Mockup</h3>
+          <p>A minimalist online store prototype with a focus on user-friendly product browsing and checkout flow.</p>
+        </div>
+        <div class="project">
+          <h3>Event Discovery Platform</h3>
+          <p>A social web app concept for discovering local events and connecting with friends in real time.</p>
+        </div>
+        <div class="project">
+          <h3>Personal Blog Redesign</h3>
+          <p>A refresh of a personal blog with a grid-based layout, modern typography, and better mobile usability.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+      <h2>Insights</h2>
+      <article>
+        <h3>Designing for Simplicity</h3>
+        <p>In a world crowded with complex digital products, simplicity is often overlooked.  
+          I’ve found that the best solutions are often those that make the user feel at ease without 
+          overwhelming them with choices or clutter...</p>
+      </article>
+      <article>
+        <h3>Learning from Failure</h3>
+        <p>One of my earliest projects completely failed because I focused too much on visuals 
+          and not enough on usability. This taught me the importance of balance — design must always 
+          serve the user’s needs first...</p>
+      </article>
+      <article>
+        <h3>The Future of Frontend</h3>
+        <p>From AI-assisted design tools to Web3 applications, the frontend landscape is evolving quickly.  
+          Developers need to stay adaptable, keep learning, and embrace change as an opportunity rather 
+          than a threat...</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact: <a href="mailto:alex.dev@email.com">alex.dev@email.com</a> |
+       <a href="https://github.com/">GitHub</a> |
+       <a href="https://linkedin.com/">LinkedIn</a></p>
+    <p>&copy; 2025 Alex’s Portfolio. Crafted with passion.</p>
+  </footer>
+</body>
+</html>
